@@ -176,7 +176,6 @@ error_reporting(0);
                                         </li>
                                        
                                         <li class="dropdown"><a href="guide.php">Guide Covid-19 <span class="fa"></span></a>
-                                        <li class="dropdown"><a href="statMAP.php">Statistiques  <span class="fa"></span></a>
 
 									</ul>
 								</div><!-- /.navbar-collapse -->				
@@ -194,27 +193,8 @@ error_reporting(0);
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
+                            
                             <div class="item active">
-                                <img src="img/slider/slide-1.jpg" alt="Hero Slide">
-                                <!--Slide Image-->
-
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h1 class="animated lightSpeedIn">Restez chez vous ! </h1>
-
-										<p class="lead animated lightSpeedIn">L'heure est grave et on a les cartes en mains.<br>
-											Notre avenir, et celui de nos proches ne tient <br>
-											qu'a nous et ça n'a jamais été aussi simple !</p>
-
-                                        <a class="btn btn-default animated lightSpeedIn" href="https://www.who.int/health-topics/coronavirus">En Savoir Plus sur le COVID-19</a>
-                                    </div>
-                                    <!--.carousel-caption-->
-                                </div>
-                                <!--.container-->
-                            </div>
-                            <!--.item-->
-
-                            <div class="item">
                                 <img src="img/slider/slide-2.jpg" alt="Hero Slide">
                                 <!--Slide Image-->
 
@@ -235,15 +215,7 @@ error_reporting(0);
                         </div>
                         <!--.carousel-inner-->
 
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        
                     </div>
                     <!-- #main-carousel-->
 
@@ -253,9 +225,9 @@ error_reporting(0);
 			              <div class="row">
 			                <div class="col-xs-12 text-center">
 			                  <h2 class="section-title">Méthodes de prévention</h2>
-							  <span class="section-sub">Protégez-vous et protégez les autres en étant ‎informé des éléments<br>
-								 essentiels et en prenant les ‎précautions adaptées. <br>
-								 Suivez les conseils de ‎l’organisme de santé publique du lieu où vous vivez.<br> 
+							  <span class="section-sub">Protégez-vous et protégez les autres en étant informé des éléments<br>
+								 essentiels et en prenant les précautions adaptées. <br>
+								 Suivez les conseils de l’organisme de santé publique du lieu où vous vivez.<br> 
 			                </div>
 			              </div> <!-- /.row -->
 
@@ -268,7 +240,7 @@ error_reporting(0);
 				              		
 				              		<h3>Lavez les mains</h3>
 									  <p>Se laver souvent les mains. <br> 
-										Utiliser du savon et ‎de l’eau, <br> ou une solution hydroalcoolique.<br> ou un gel antycéptique ‎ </p>
+										Utiliser du savon et de l’eau, <br> ou une solution hydroalcoolique.<br> ou un gel antycéptique  </p>
 			              		</div>
 			              	</div><!-- /.col-sm-4 -->
 
@@ -278,7 +250,7 @@ error_reporting(0);
 				              			<a href="#"><img src="img/service/masque.jpg" alt=""></a>
 				              		</div>
 				              		<h3> </h3>Portez une bavette </h3>
-				              		<p>Rester à distance de toute personne <br> qui tousse ‎ou éternue. <br> Et portez les masques de protection ‎ ‎ </p>
+				              		<p>Rester à distance de toute personne <br> qui tousse ou éternue. <br> Et portez les masques de protection   </p>
 			              		</div>
 
 			              	</div><!-- /.col-sm-4 -->
@@ -314,29 +286,7 @@ error_reporting(0);
 				        </div>
 			        </section>
 
-			        <!-- counter start -->
-			        <section class="counter-section" data-stellar-background-ratio="0.5">
-			        	<div class="container">
-							<div class="row">
-						        <div class="col-sm-4 col-xs-12">
-						          <div class="counter-block">
-						          	<span class="count-description "><strong class="timer">2</strong> MILLIONS <br>Cas totales</span>
-						          </div>
-						        </div> 
-						       <div class="col-sm-4 col-xs-12">
-						          <div class="counter-block">
-						          	<span class="count-description"><strong class="timer">153</strong>MILLES <br>Cas sont morts</span>
-						          </div>
-						        </div> 
-						       <div class="col-sm-4 col-xs-12">
-						          <div class="counter-block">
-						          	<span class="count-description "><strong class="timer">569</strong>MILLES <br>Cas sont rétablis</span>
-						          </div>
-						        </div> 
-					      	</div> <!-- /.row -->
-			        	</div><!-- /.container -->
-			        </section><!-- /.counter-section -->
-			        <!-- counter end -->
+			       
 
 			        <!-- cta start -->
 			        <section class="cta-section">
@@ -350,48 +300,17 @@ error_reporting(0);
 			        <footer class="copyright-section">
 			        	<div class="container text-center">
 			        		<div class="copyright-info">
-			        			<span>Copyright © 2020 COVIDO. All Rights Reserved.<br> Designed by Hadhami El Ouni and Aziz Ben Hadj Yahia</span>
+			        			<span>Copyright © 2022 COVIDO. All Rights Reserved.<br> Designed by Hadhami El Ouni and Sabeur Ben Ali</span>
 			        		</div>
 			        	</div><!-- /.container -->
 			        </footer>
 			        <!-- copyright-section end -->
 	    		</div> <!-- .st-content -->
 		    </div> <!-- .st-pusher -->
-			
-		<!-- Preloader -->
-		<div id="preloader">
-			<div id="status">
-				<div class="status-mes"></div>
-			</div>
-		</div>
+		
 
-	    <!-- jQuery -->
-	    <script src="js/jquery.js"></script>
-	    <!-- Bootstrap Core JavaScript -->
-	    <script src="js/bootstrap.min.js"></script>
-	    <!-- owl.carousel -->
+	    
 	    <script src="owl.carousel/owl.carousel.min.js"></script>
-	    <!-- Magnific-popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Offcanvas Menu -->
-		<script src="js/hippo-offcanvas.js"></script>
-		<!-- inview -->
-		<script src="js/jquery.inview.min.js"></script>
-		<!-- stellar -->
-		<script src="js/jquery.stellar.js"></script>
-		<!-- countTo -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- classie -->
-		<script src="js/classie.js"></script>
-		<!-- selectFx -->
-		<script src="js/selectFx.js"></script>
-		<!-- sticky kit -->
-		<script src="js/jquery.sticky-kit.min.js"></script>
-	    <!-- GOGLE MAP -->
-	    <script src="https://maps.googleapis.com/maps/api/js"></script>
-	    <!--TWITTER FETCHER-->
-	    <script src="js/twitterFetcher_min.js"></script>
-	    <!-- Custom Script -->
-	    <script src="js/scripts.js"></script>
+	    
 	</body>
 </html>
