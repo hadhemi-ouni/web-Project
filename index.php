@@ -25,8 +25,6 @@ error_reporting(0);
 	    <link href="css/hippo-off-canvas.css" rel="stylesheet">
 	    <!-- animate CSS -->
 	    <link href="css/animate.css" rel="stylesheet">
-	    <!-- language CSS -->
-	    <link href="css/language-select.css" rel="stylesheet">
 	    <!-- owl.carousel CSS -->
 	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
 		<!-- magnific-popup -->
@@ -39,8 +37,6 @@ error_reporting(0);
 	    <link href="css/style.css" rel="stylesheet">
 	    <!-- Responsive CSS -->
 	    <link href="css/responsive.css" rel="stylesheet">
-
-	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
 	    
 	</head>
 
@@ -79,14 +75,6 @@ error_reporting(0);
 					  			</div><!-- /.container -->
 				  			</div><!-- /.overlay-bg -->
 				  		</nav><!-- /.top-bar -->
-
-				  		<div id="search">
-						    <button type="button" class="close">x</button>
-						    <form methode=post action="forum.php">
-						        <input type="search" value="" name="searchfor"  placeholder="type keyword(s) here" />
-						        <button type="submit" class="btn btn-primary">Search</button>
-						    </form>
-						</div>
 						
 						<nav class="navbar navbar-default" role="navigation">
 							
@@ -100,8 +88,6 @@ error_reporting(0);
 
                                <!-- Collect the nav links, forms, and other content for toggling -->
 							  <div class="collapse navbar-collapse navbar-collapse">
-
-									<span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i></a></span>
 
 									<ul class="nav navbar-nav navbar-right">
 									

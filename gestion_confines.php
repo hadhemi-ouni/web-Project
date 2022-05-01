@@ -198,8 +198,8 @@ error_reporting(0);
 <section class="container" >
     <br>
     <span class="haut">
-        <a class="blueButton" href="ajouter_confines.php">+ Ajouter un confiné </a> &nbsp 
-        <a class="blueButton" href="consulter_confines.php">Consulter un confiné </a>    
+        <a class="btn btn-primary" href="ajouter_confines.php">+ Ajouter un confiné </a> &nbsp 
+        <a class="btn btn-primary" href="consulter_confines.php">Consulter un confiné </a>    
     </span>
 
 
