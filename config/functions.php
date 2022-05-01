@@ -19,7 +19,7 @@ $conn->close();
 function connect(){
     $servername = "localhost";
 $username = "root";
-$password = "MyNewPass";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
