@@ -233,7 +233,7 @@ if(!isset($_SESSION["name"])){
                 if(isset($_POST["titre"]) and isset($_POST["ques"])){
                     $servername = "localhost";
                     $username = "root";
-                    $password = "MyNewPass";
+                    $password = "";
                     $conn = new mysqli($servername, $username, $password);
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);

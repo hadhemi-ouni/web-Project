@@ -181,7 +181,7 @@ error_reporting(0);
                             if(isset($_POST["f_mail"])){
                                 $servername = "localhost";
                                 $username = "root";
-                                $password = "MyNewPass";
+                                $password = "";
                                 $conn = new mysqli($servername, $username, $password);
                                 if ($conn->connect_error) {
                                     die("Connection failed: " . $conn->connect_error);

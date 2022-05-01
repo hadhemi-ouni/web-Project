@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "MyNewPass");
+$mysqli = new mysqli("localhost", "root", "");
 if($mysqli->connect_error) {
   exit('Could not connect');
 }

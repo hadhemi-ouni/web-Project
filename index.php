@@ -41,12 +41,7 @@ error_reporting(0);
 	    <link href="css/responsive.css" rel="stylesheet">
 
 	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
-	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	    <!--[if lt IE 9]>
-		    <script src="js/vendor/html5shim.js"></script>
-		    <script src="js/vendor/respond.min.js"></script>
-	    <![endif]-->
+	    
 	</head>
 
 
