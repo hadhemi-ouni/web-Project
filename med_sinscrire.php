@@ -285,14 +285,6 @@ error_reporting(0);
 				</div> <!-- .st-content -->
     		</div> <!-- .st-pusher -->
 
-	    	
-
-		<!-- Preloader -->
-		<div id="preloader">
-			<div id="status">
-				<div class="status-mes"></div>
-			</div>
-		</div>
 
 
 		<!-- jQuery -->
