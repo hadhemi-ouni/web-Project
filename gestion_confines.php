@@ -32,16 +32,18 @@ error_reporting(0);
 	    <link href="css/responsive.css" rel="stylesheet">
 
 		<script src="https://kit.fontawesome.com/c805bcc5d6.js" crossorigin="anonymous"></script>
-
-	    <script language="javascript">
-		function supprimer(id){
+		<script language="javascript">
+		function Supprimer_confine(id){
+        var elm = document.getElementById(id);
+        var elms = elm.getElementsByTagName("td");
         var xhttp;
         xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "config/supprimerConfine.php?id="+id, true);
+        xhttp.open("GET", "config/supprimerConfine.php?id="+elms[0].innerHTML, true);
         xhttp.send();
-		setTimeout(() => {   window.location.href = "gestion_confines.php"; }, 500);
+        elm.parentNode.removeChild(elm);
 		}
 		</script>
+
 
 	</head>
 
