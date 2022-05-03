@@ -33,7 +33,16 @@ error_reporting(0);
 
 		<script src="https://kit.fontawesome.com/c805bcc5d6.js" crossorigin="anonymous"></script>
 
-	    
+	    <script language="javascript">
+		function supprimer(id){
+        var xhttp;
+        xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "config/supprimerConfine.php?id="+id, true);
+        xhttp.send();
+		setTimeout(() => {   window.location.href = "gestion_confines.php"; }, 500);
+		}
+		</script>
+
 	</head>
 
 	<body id="page-top">

@@ -47,7 +47,7 @@ if(!isset($_SESSION["admin_name"])){
         xhttp = new XMLHttpRequest();
         xhttp.open(
           "GET",
-          "ajax/accept.php?id=" + elms[4].innerHTML + "&accept=yes",
+          "config/accept.php?id=" + elms[4].innerHTML + "&accept=yes",
           true
         );
         xhttp.send();
@@ -61,7 +61,7 @@ if(!isset($_SESSION["admin_name"])){
         xhttp = new XMLHttpRequest();
         xhttp.open(
           "GET",
-          "ajax/accept.php?id=" + elms[4].innerHTML + "&accept=no",
+          "config/accept.php?id=" + elms[4].innerHTML + "&accept=no",
           true
         );
         xhttp.send();
