@@ -51,6 +51,28 @@ error_reporting(0);
 	
 
 	<body id="page-top">
+	<script type="text/javascript">
+	var alertcin = "";
+
+	function validateForm() {
+		let cin = document.forms["myForm"]["med_cin"].value;
+		alertcin = "";
+		let test = true;
+		if ((cin.length != 8) || (cin[0] != '0' && cin[0] != '1')) {
+
+			alertcin = "* ";
+			test = false;
+			if (cin.length != 8) alertcin += "le chapms cin doit contenir 8 chiffre exacatement  <br> ";
+			if ((cin[0] != '0' && cin[0] != '1')) alertcin += "  le chapms cin doit commencer par 0 ou 1   <br> ";
+		}
+
+
+
+		document.getElementById("erreur_msg").innerHTML = alertcin;
+
+		return test;
+	}
+	</script>
 		<div id="st-container" class="st-container">
     		<div class="st-pusher">
     			<div class="st-content">
@@ -170,11 +192,14 @@ error_reporting(0);
                     <div class="container">	
 
 						<div class="row">
-                            <form method=post action="med_seconnecter.php">
+                            <form method=post action="med_seconnecter.php"  name="myForm" onsubmit=" return validateForm()">
                                 <div class="form-group">
                                     <label for="med_cin">CIN</label>
-                                    <input id="med_cin" name="med_cin" type="text" class="form-control" required="" placeholder="">
-                                </div>
+                                  
+									<input id="med_cin" name="med_cin" type="text" class="form-control" required="" placeholder="">
+									<small id="erreur_msg" style="color: red;"></small>
+
+								</div>
                                 <div class="form-group">
                                     <label for="med_password">Mot de passe</label>
                                     <input id="med_password" name="med_password" type="password" class="form-control" required="" placeholder="">
