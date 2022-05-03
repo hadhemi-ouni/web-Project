@@ -190,9 +190,9 @@ if(!isset($_SESSION["admin_name"])){
               $conn->connect_error); } $req= "SELECT * FROM projetphp.doctor
               where accepted = 'en attente';"; $result = $conn->query($req);
               $id=0; while($row = $result->fetch_assoc()): $id++; ?>
-              <table cellpadding="0" cellspacing="0" border="0">
+              <table cellpadding="0" cellspacing="0"  border="0">
                 <tbody>
-                  <tr id="<?" ="$id" ?>
+                  <tr id=<?= $id ?>>
                     >
                     <td><?= $row["nom"]?></td>
                     <td><?= $row["prenom"]?></td>
