@@ -164,11 +164,7 @@ error_reporting(0);
 <section class="container" >
 <br>
                         <div class="row">       
-							<div class="red message">
-								<p>
-									erreuuurrr
-								</p>
-							</div>
+							
                             <form action="ajouter_confines.php" method="POST">
                                 <div class="form-group">
                                     <label for="c_id"> ID </label>
