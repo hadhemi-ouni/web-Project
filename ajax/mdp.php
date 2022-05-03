@@ -1,7 +1,17 @@
 <?php
 ob_start();
 session_start();
-include('config/functions.php');
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 if(!isset($_GET['nouveau'])){
         header('Location: index.php');
     }
@@ -9,7 +19,6 @@ if(!isset($_GET['nouveau'])){
         extract($_GET);
         $nouveau = strip_tags($nouveau);
     }
-$conn = connect();
 $req = "update projetphp.".$_SESSION["type"]." set password = '".$nouveau."'
 where  E_mail = '".$_SESSION["mail"]."';";
 $conn->query($req);

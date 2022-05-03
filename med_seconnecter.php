@@ -60,93 +60,97 @@ error_reporting(0);
 		<div id="st-container" class="st-container">
     		<div class="st-pusher">
     			<div class="st-content">
-					<header class="header">
-						<nav class="top-bar">
-							<div class="overlay-bg">
-								<div class="container">
-									<div class="row">
-										
-										<div class="col-sm-6 col-xs-12">
-											<div class="call-to-action">
-												<ul class="list-inline">
-													<li><i class="fa fa-phone"> 90-110-144</i> </li>
-													<li><i class="fa fa-envelope"> Hadhami.ouni@etudiant-fst.utm.tn</i> </li>
-												</ul>
-											</div>
-										</div>
+				<header class="header">
+				  		<nav class="top-bar">
+				  			<div class="overlay-bg">
+					  			<div class="container">
+					  				<div class="row">
+					  					
+					  					<div class="col-sm-6 col-xs-12">
+						  					<div class="call-to-action">
+						  						<ul class="list-inline">
+						  							<li><i class="fa fa-phone"></i> 58 927 676 </li>
+						  							<li><i class="fa fa-envelope"> </i>Hadhami.ouni@etudiant-fst.utm.tn </li>
+						  						</ul>
+						  					</div>
+					  					</div>
 
-										<div class="col-sm-6 hidden-xs">
-											<div class="topbar-right">
-												
-												<ul class="social-links list-inline pull-right">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-													<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div><!-- /.row -->
-								</div><!-- /.container -->
-							</div><!-- /.overlay-bg -->
-						</nav><!-- /.top-bar -->
-
-						<div id="search">
-						    <button type="button" class="close">x</button>
-						    <form methode=post action="forum.php">
-						        <input type="search" value="" name="searchfor"  placeholder="type keyword(s) here" />
-						        <button type="submit" class="btn btn-primary">Search</button>
-						    </form>
-						</div>
+					  					<div class="col-sm-6 hidden-xs">
+						  					<div class="topbar-right">
+							  					
+						  						<ul class="social-links list-inline pull-right">
+						  							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						  							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						  							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						  							<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+						  						</ul>
+						  					</div>
+					  					</div>
+					  				</div><!-- /.row -->
+					  			</div><!-- /.container -->
+				  			</div><!-- /.overlay-bg -->
+				  		</nav><!-- /.top-bar -->
 						
 						<nav class="navbar navbar-default" role="navigation">
 							
 							<div class="container mainnav">
 								<div class="navbar-header">
 									<h1 class="logo"><a class="navbar-brand" href="index.php"><img src="img/logo.png" width=190px height=40px alt=""></a></h1>
-
-			                     
-
 								</div>
 
-                               <!-- Collect the nav links, forms, and other content for toggling -->
 							  <div class="collapse navbar-collapse navbar-collapse">
-
-									<span class="search-button pull-right"><a href="#search"><i class="fa fa-search"></i></a></span>
 
 									<ul class="nav navbar-nav navbar-right">
 									
-                                        <li class="active"><a href="index.php">Acceuil <span class="fa "></span></a>
+                                        <li class="active"><a href="index.php">Acceuil </a>
                                             
                                         </li>
-                                       
-                                        <li class="dropdown"><a href="#">S'identifier <span class="fa fa-angle-down"></span></a>
+                                        <?php
+                                        if(!isset($_SESSION["type"])):
+                                        ?>
+                                        	<li><a href="espacemedecins.php">Espace Médecin </a></li>
+                                        <?php
+                                        endif;
+                                        if($_SESSION["type"] == "doctor"):
+                                        ?>
+                                         <li class="dropdown"><a href="#">Dr <?=$_SESSION["name"]?> <span class="fa fa-angle-down"></span></a>
                                             <div class="submenu-wrapper">
                                                 <div class="submenu-inner">
                                                     <ul class="dropdown-menu">
-                                                    	<li><a href="espacemedecins.php">Espace Médecin </a></li>
-                                                        <li><a href="espace_visiteur.php">Espace visiteur</a></li>
+                                                    	<li><a href="profile.php">Mon profile </a></li>
+                                                        <li><a href="deconnecter.php">Se déconnecter</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    
+                                        <li class="dropdown"><a href="gestion_confines.php">Gestion des confinés <span class="fa fa-angle-down"></span></a>
+                                            <div class="submenu-wrapper">
+                                                <div class="submenu-inner">
+                                                    <ul class="dropdown-menu">
+                                                    	<li><a href="ajouter_confines.php">Ajouter un confiné </a></li>
+                                                        <li><a href="consulter_confines.php">Consulter un confiné</a></li>
                                                         
                                                     </ul>
                                                 </div>
                                             </div>
                                         </li>
                                         
-                                        <li class="dropdown"><a href="forum.php">Forum<span class="fa"></span></a>
-                                            
-                                        </li>
-                                       
+                                        <?php
+                                        endif;
+                                        ?>
+
                                         <li class="dropdown"><a href="guide.php">Guide Covid-19 <span class="fa"></span></a>
-                                        <li class="dropdown"><a href="statMAP.php">Statistiques  <span class="fa"></span></a>
 
 									</ul>
-								</div><!-- /.navbar-collapse -->
-						  </div><!-- /.container -->
+								</div><!-- /.navbar-collapse -->				
+							</div><!-- /.container -->
 
-						  
-					  </nav>
-				  </header>
-					
+							
+						</nav>
+					</header>
 					<section class="page-title-section">
 						<div class="container">
 							<div class="row">
@@ -220,7 +224,7 @@ error_reporting(0);
 			        <footer class="copyright-section">
 			        	<div class="container text-center">
 			        		<div class="copyright-info">
-			        			<span>Copyright © 2020 COVIDO. All Rights Reserved.<br> Designed by Hadhami El Ouni and Aziz Ben Hadj Yahia</span>
+			        			<span>Copyright © 2020 COVIDO. All Rights Reserved.<br> Designed by Hadhami El Ouni and Sabeur Ben ALi</span>
 			        		</div>
 			        	</div><!-- /.container -->
 			        </footer>
@@ -229,35 +233,6 @@ error_reporting(0);
 				</div> <!-- .st-content -->
     		</div> <!-- .st-pusher -->
 
-	    
-
-		<!-- jQuery -->
-	    <script src="js/jquery.js"></script>
-	    <!-- Bootstrap Core JavaScript -->
-	    <script src="js/bootstrap.min.js"></script>
-	    <!-- owl.carousel -->
-	    <script src="owl.carousel/owl.carousel.min.js"></script>
-	    <!-- Magnific-popup -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Offcanvas Menu -->
-		<script src="js/hippo-offcanvas.js"></script>
-		<!-- inview -->
-		<script src="js/jquery.inview.min.js"></script>
-		<!-- stellar -->
-		<script src="js/jquery.stellar.js"></script>
-		<!-- countTo -->
-		<script src="js/jquery.countTo.js"></script>
-		<!-- classie -->
-		<script src="js/classie.js"></script>
-		<!-- selectFx -->
-		<script src="js/selectFx.js"></script>
-		<!-- sticky kit -->
-		<script src="js/jquery.sticky-kit.min.js"></script>
-	    <!-- GOGLE MAP -->
-	    <script src="https://maps.googleapis.com/maps/api/js"></script>
-	    <!--TWITTER FETCHER-->
-	    <script src="js/twitterFetcher_min.js"></script>
-	    <!-- Custom Script -->
-	    <script src="js/scripts.js"></script>
+			<script src="owl.carousel/owl.carousel.min.js"></script>
 	</body>
 </html>

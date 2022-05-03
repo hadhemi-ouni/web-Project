@@ -10,36 +10,24 @@ error_reporting(0);
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="description" content="">
-	    <meta name="author" content="">
 
-	    <!-- Web Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-        <!-- Bootstrap Core CSS -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
-	    <!-- Flaticon CSS -->
 	    <link href="fonts/flaticon/flaticon.css" rel="stylesheet">
-	    <!-- font-awesome CSS -->
 	    <link href="css/font-awesome.min.css" rel="stylesheet">
-	    <!-- Offcanvas CSS -->
-	    <link href="css/hippo-off-canvas.css" rel="stylesheet">
-	    <!-- animate CSS -->
+	    
 	    <link href="css/animate.css" rel="stylesheet">
-	    <!-- owl.carousel CSS -->
 	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-		<!-- magnific-popup -->
-    	<link href="css/magnific-popup.css" rel="stylesheet">
-    	<!-- Main menu -->
+		
     	<link href="css/menu.css" rel="stylesheet">
-    	<!-- Template Common Styles -->
     	<link href="css/template.css" rel="stylesheet">
-	    <!-- Custom CSS -->
 	    <link href="css/style.css" rel="stylesheet">
-	    <!-- Responsive CSS -->
 	    <link href="css/responsive.css" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/c805bcc5d6.js" crossorigin="anonymous"></script>
+
 	    
 	</head>
-
 
 	<body id="page-top">
 		<div id="st-container" class="st-container">
@@ -54,8 +42,8 @@ error_reporting(0);
 					  					<div class="col-sm-6 col-xs-12">
 						  					<div class="call-to-action">
 						  						<ul class="list-inline">
-						  							<li><i class="fa fa-phone"> 90-110-144</i> </li>
-						  							<li><i class="fa fa-envelope"> Hadhami.ouni@etudiant-fst.utm.tn</i> </li>
+						  							<li><i class="fa fa-phone"></i> 58 927 676 </li>
+						  							<li><i class="fa fa-envelope"> </i>Hadhami.ouni@etudiant-fst.utm.tn </li>
 						  						</ul>
 						  					</div>
 					  					</div>
@@ -81,9 +69,6 @@ error_reporting(0);
 							<div class="container mainnav">
 								<div class="navbar-header">
 									<h1 class="logo"><a class="navbar-brand" href="index.php"><img src="img/logo.png" width=190px height=40px alt=""></a></h1>
-
-			                     
-
 								</div>
 
 							  <div class="collapse navbar-collapse navbar-collapse">
@@ -96,12 +81,7 @@ error_reporting(0);
                                         <?php
                                         if(!isset($_SESSION["type"])):
                                         ?>
-                                       
                                         	<li><a href="espacemedecins.php">Espace Médecin </a></li>
-                                                        
-                                        
-                                        
-                                        
                                         <?php
                                         endif;
                                         if($_SESSION["type"] == "doctor"):
@@ -134,7 +114,7 @@ error_reporting(0);
                                         <?php
                                         endif;
                                         ?>
-										                                       
+
                                         <li class="dropdown"><a href="guide.php">Guide Covid-19 <span class="fa"></span></a>
 
 									</ul>
@@ -146,11 +126,7 @@ error_reporting(0);
 					</header>
 
                     <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#main-carousel" data-slide-to="1"></li>
-                        </ol>
-
+                       
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             
@@ -165,7 +141,7 @@ error_reporting(0);
 
                                         <p class="lead animated bounceIn">Créez un environnement sécuritaire, suivez les modes d'emploi et 
 											protégez-vous des dangers en sachant les reconnaître. .</p>
-                                        <a class="btn btn-default animated bounceIn" href="https://www.who.int/health-topics/coronavirus">En Savoir Plus sur le COVID-19</a>
+                                        <a class="btn btn-warning" href="https://www.who.int/health-topics/coronavirus">En Savoir Plus sur le COVID-19</a>
                                     </div>
                                     <!--.carousel-caption-->
                                 </div>
@@ -177,9 +153,7 @@ error_reporting(0);
 
                         
                     </div>
-                    <!-- #main-carousel-->
 
-			        <!-- services start -->
 					<section class="service-home service-home2 section-padding">
 			            <div class="container">
 			              <div class="row">
@@ -209,7 +183,7 @@ error_reporting(0);
 				              		<div class="service-thumb-home thumb-grid">
 				              			<a href="#"><img src="img/service/masque.jpg" alt=""></a>
 				              		</div>
-				              		<h3> </h3>Portez une bavette </h3>
+				              		<h3> Portez une bavette </h3>
 				              		<p>Rester à distance de toute personne <br> qui tousse ou éternue. <br> Et portez les masques de protection   </p>
 			              		</div>
 
@@ -227,8 +201,7 @@ error_reporting(0);
 			              </div> <!-- /.row -->
 			            </div><!-- /.container -->
 			        </section>
-			        <!-- services end -->
-
+			        
 			        <section class="feature-section section-padding">
 				        <div class="container">
 				        	<div class="row">
@@ -236,9 +209,6 @@ error_reporting(0);
 				        			<h2>Mesures de protection essentielles contre le nouveau coronavirus</h2>
 
 									<p>Tenez-vous au courant des dernières informations sur la flambée de COVID-19, disponibles sur le site Web de l’OMS et auprès des autorités de santé publique nationales et locales. La COVID-19 continue de toucher surtout la population de la Chine, même si des flambées sévissent dans d’autres pays. La plupart des personnes infectées présentent des symptômes bénins et guérissent, mais d’autres peuvent avoir une forme plus grave. Prenez soin de votre santé et protégez les autres en suivant les conseils</p> 
-
-								
-
 									<a href="https://www.who.int/fr/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="btn btn-primary">Mesures de protection détaillés</a>
 				        		</div>
 				        
@@ -247,15 +217,13 @@ error_reporting(0);
 			        </section>
 
 			       
-
-			        <!-- cta start -->
 			        <section class="cta-section">
 			        	<div class="container text-center">
 			        		<a data-toggle="modal" data-target="#quoteModal" href="https://www.worldometers.info/coronavirus/" class="btn btn-primary quote-btn">Dérniers statistiques</a>
 
 			        	</div><!-- /.container -->
-			        </section><!-- /.cta-section -->
-			        <!-- cta end -->
+			        </section>
+
 			        <!-- copyright-section start -->
 			        <footer class="copyright-section">
 			        	<div class="container text-center">
@@ -264,6 +232,7 @@ error_reporting(0);
 			        		</div>
 			        	</div><!-- /.container -->
 			        </footer>
+
 			        <!-- copyright-section end -->
 	    		</div> <!-- .st-content -->
 		    </div> <!-- .st-pusher -->
