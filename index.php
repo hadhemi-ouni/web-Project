@@ -86,43 +86,20 @@ error_reporting(0);
 
 								</div>
 
-                               <!-- Collect the nav links, forms, and other content for toggling -->
 							  <div class="collapse navbar-collapse navbar-collapse">
 
 									<ul class="nav navbar-nav navbar-right">
 									
-                                        <li class="active"><a href="index.php">Acceuil <span class="fa "></span></a>
+                                        <li class="active"><a href="index.php">Acceuil </a>
                                             
                                         </li>
                                         <?php
                                         if(!isset($_SESSION["type"])):
                                         ?>
-                                        <li class="dropdown"><a href="#">S'identifier <span class="fa fa-angle-down"></span></a>
-                                            <div class="submenu-wrapper">
-                                                <div class="submenu-inner">
-                                                    <ul class="dropdown-menu">
-                                                    	<li><a href="espacemedecins.php">Espace Médecin </a></li>
-                                                        <li><a href="espace_visiteur.php">Espace visiteur</a></li>
+                                       
+                                        	<li><a href="espacemedecins.php">Espace Médecin </a></li>
                                                         
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <?php
-                                        endif;
-                                        if($_SESSION["type"] == "visiteur"):
-                                        ?>
-                                         <li class="dropdown"><a href="#"> <?= $_SESSION["name"]?> <span class="fa fa-angle-down"></span></a>
-                                            <div class="submenu-wrapper">
-                                                <div class="submenu-inner">
-                                                    <ul class="dropdown-menu">
-                                                    	<li><a href="profile.php">Mon profile </a></li>
-                                                        <li><a href="deconnecter.php">Se déconnecter</a></li>
-                                                        
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
+                                        
                                         
                                         
                                         <?php
@@ -157,10 +134,7 @@ error_reporting(0);
                                         <?php
                                         endif;
                                         ?>
-                                        <li class="dropdown"><a href="forum.php">Forum<span class="fa"></span></a>
-                                            
-                                        </li>
-                                       
+										                                       
                                         <li class="dropdown"><a href="guide.php">Guide Covid-19 <span class="fa"></span></a>
 
 									</ul>
