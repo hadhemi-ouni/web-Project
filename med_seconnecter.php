@@ -43,15 +43,9 @@ error_reporting(0);
 	    <link href="css/style.css" rel="stylesheet">
 	    <!-- Responsive CSS -->
 	    <link href="css/responsive.css" rel="stylesheet">
-		<link href="redbox.css" rel="stylesheet">
+		<link href="alert_msg.css" rel="stylesheet">
 
-	    <script src="js/vendor/modernizr-2.8.1.min.js"></script>
-	    <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	    <!--[if lt IE 9]>
-		    <script src="js/vendor/html5shim.js"></script>
-		    <script src="js/vendor/respond.min.js"></script>
-	    <![endif]-->
+	    
 	</head>
 
 	
@@ -203,7 +197,7 @@ error_reporting(0);
                                 if($result->num_rows == 1){
                                     $row = $result->fetch_assoc();
                                     if($row["accepted"] == "en attente"){
-                                        echo "	<div id='main-alert-red'>votre demande n'est pas encore acceptée </div>";
+                                        echo "	<div class='red message'><p>votre demande n'est pas encore acceptée</p> </div>";
                                     }
                                    else{ $_SESSION["id"] = $row["CIN"];
                                     $_SESSION["name"] = $row["nom"];
@@ -211,7 +205,7 @@ error_reporting(0);
                                     $_SESSION["mail"] = $row["E_mail"];
                                     header('Location: index.php');
                                     }
-                                } else echo "	<div id='main-alert-red'>donnés erroné <br> si vous n'avez pas un compte il faut s'inscrire </div> ";
+                                } else echo "	<div class='red message'><p>donnés erroné <br> si vous n'avez pas un compte il faut s'inscrire </p> </div> ";
                             }
                              ob_end_flush();
                             ?>

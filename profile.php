@@ -27,6 +27,7 @@ if ($result->num_rows == 1){
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="">
 	    <meta name="author" content="">
+	    <link href="alert_msg.css" rel="stylesheet">
 
 	    <title>COVIDO</title>
 	   	<!-- Web Fonts -->
@@ -222,9 +223,11 @@ if ($result->num_rows == 1){
                                     $erreur = "";
                                     if(isset($_POST["ancien"]) && isset($_POST["nouveau"]) && isset($_POST["repeter"])){
                                         if($_POST["ancien"] == $row["password"]){
-                                            if($_POST["nouveau"] == $_POST["repeter"]){
-                                                header('Location: ajax/mdp.php?nouveau='.$_POST["nouveau"]);
-                                            }
+                                            if($_POST["nouveau"] == $_POST["repeter"]){		
+												$req = "update projetphp.doctor set password = '".$_POST["nouveau"]."'
+												where  E_mail = '".$_SESSION["mail"]."';";
+												echo '<div class="message green"><p>Mot de passe modifié avec succès </p></div>';
+											}
                                             else
                                             $erreur = "veuillez entrer le même mot de passe 2 fois ";
                                         }
@@ -232,8 +235,10 @@ if ($result->num_rows == 1){
                                         $erreur = "le mot de passe que vous avez entré est erroné ";
 
                                         
-                                    } 
-                                    echo $erreur;
+                                    }
+									if ($erreur!=""){
+	                                    echo '<div class="red message"><p>'. $erreur.'</p></div>' ;
+									} 
                                 ?>
         
                                                 
@@ -241,24 +246,7 @@ if ($result->num_rows == 1){
 											
 										</div> 
 									</div><!--/.col-->
-                                        <?php
-                                    $erreur = "";
-                                    if(isset($_POST["ancien"]) && isset($_POST["nouveau"]) && isset($_POST["repeter"])){
-                                        if($_POST["ancien"] == $row["password"]){
-                                            if($_POST["nouveau"] == $_POST["repeter"]){
-                                                header('Location: ajax/mdp.php?nouveau='.$_POST["nouveau"]);
-                                            }
-                                            else
-                                            $erreur = "veuillez entrer le même mot de passe 2 fois ";
-                                        }
-                                        else
-                                        $erreur = "le mot de passe que vous avez entré est erroné ";
-
-                                        
-                                    } 
-                                    echo $erreur;
-                                ?>
-                                    <div class="col-sm-7 col-lg-offset-1">
+	                                    <div class="col-sm-7 col-lg-offset-1">
                                         <div class="profile">
                                             <h3>
                                                 <span class="profile"> Nom et prénom : </span>

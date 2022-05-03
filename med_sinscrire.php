@@ -15,7 +15,8 @@ error_reporting(0);
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="">
 	    <meta name="author" content="">
-        		<link href="redbox.css" rel="stylesheet">
+        
+		<link href="alert_msg.css" rel="stylesheet">
 
 	    <title>COVIDO</title>
 	   	<!-- Web Fonts -->
@@ -268,10 +269,10 @@ error_reporting(0);
                            <?php 
                                 if($correct == "correct"):
                                 ?>
-                                <div id="main-alert-green"> votre inscription a été envoyé au admin </div>
+                                <div class="green message"> <p>votre inscription a été envoyée au admin </p></div>
                                 <?php elseif($correct == "pas correct"):
                         ?>
-                         <div id="main-alert-red"><?= $erreurS?> </div>
+                         <div class="message red"><p><?= $erreurS?> </p></div>
                         <?php endif;?>
 					</div>
 				</section>

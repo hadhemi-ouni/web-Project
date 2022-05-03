@@ -4,7 +4,7 @@ session_start();
 error_reporting(0);
 include('config/functions.php');
 if(isset($_SESSION["admin_name"])){
-    header("location: indexAdmin.php");
+    header("location: docteurs.php");
 }
 
 
@@ -14,7 +14,8 @@ if(isset($_SESSION["admin_name"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Admin </title>
-	     	
+    <link href="alert_msg.css" rel="stylesheet">
+     	
     <link href="design.css" rel="stylesheet">
     <link href="admin.css" rel="stylesheet">
 
@@ -37,13 +38,15 @@ if(isset($_SESSION["admin_name"])){
                     if ($result->num_rows == 1){
                         $row = $result->fetch_assoc();
                         $_SESSION["admin_name"] = $row["username"];
-                        header("location: indexAdmin.php");
+                        header("location: docteurs.php");
                     }
                     else $er =  "username or password not found";
                     if(isset($_POST["username"])){
-                        echo "<h2>".$er."</h2>";
+                        echo '<div class="red message"><p>'.$er.' </p></div>';;
+                         
                     }
             ?>      
+
             </form>
             
         </div>

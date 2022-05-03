@@ -23,7 +23,7 @@ error_reporting(0);
 	    
 	    <link href="css/animate.css" rel="stylesheet">
 	    <link href="owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-		
+		<link href="alert_msg.css" rel="stylesheet">
     	<link href="css/menu.css" rel="stylesheet">
     	<link href="css/template.css" rel="stylesheet">
 	    <link href="css/style.css" rel="stylesheet">
@@ -164,6 +164,11 @@ error_reporting(0);
 <section class="container" >
 <br>
                         <div class="row">       
+							<div class="red message">
+								<p>
+									erreuuurrr
+								</p>
+							</div>
                             <form action="ajouter_confines.php" method="POST">
                                 <div class="form-group">
                                     <label for="c_id"> ID </label>

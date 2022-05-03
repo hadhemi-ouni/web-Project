@@ -26,7 +26,6 @@ error_reporting(0);
 
 		<script src="https://kit.fontawesome.com/c805bcc5d6.js" crossorigin="anonymous"></script>
 
-	    
 	</head>
 
 	<body id="page-top">

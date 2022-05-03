@@ -182,18 +182,19 @@ if(!isset($_SESSION["admin_name"])){
 
             <div class="tbl-content">
               <?php 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $conn = new mysqli($servername, $username, $password);
-    if ($conn->connect_error) { die("Connection failed: " .
-              $conn->connect_error); } $req= "SELECT * FROM projetphp.doctor
-              where accepted = 'en attente';"; $result = $conn->query($req);
-              $id=0; while($row = $result->fetch_assoc()): $id++; ?>
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $conn = new mysqli($servername, $username, $password);
+                if ($conn->connect_error) { die("Connection failed: " .
+                          $conn->connect_error); } $req= "SELECT * FROM projetphp.doctor
+                          where accepted = 'en attente';"; $result = $conn->query($req);
+                          $id=0; while($row = $result->fetch_assoc()): $id++; 
+              ?>
               <table cellpadding="0" cellspacing="0"  border="0">
                 <tbody>
                   <tr id=<?= $id ?>>
-                    >
+                    
                     <td><?= $row["nom"]?></td>
                     <td><?= $row["prenom"]?></td>
                     <td><?= $row["Hopital"]?></td>
