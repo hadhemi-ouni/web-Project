@@ -36,22 +36,7 @@ error_reporting(0);
 
 
 <body id="page-top">
-	<?php
-	include('config/functions.php');
-	$ready = false;
-	if (isset($_POST)) {
-		if (!existDB($_POST["c_cin"], "confines", "cin_c")) {
-			if (!existDB($_POST["c_id"], "confines", "id_c")) {
-				$ready = true;
-			}
-		}
-		if ($ready)
-			insert("'" . $_POST["c_id"] . "','" . $_POST["c_nom"] . "','" . $_POST["c_prenom"] .
-				"','" . $_POST["c_cin"] . "','" . $_POST["c_date_naissance"] . "','" . $_POST["c_date_test"] .
-				"','" . $_POST["c_symptomes"] . "','" . $_POST["c_etat"] . "','" . $_POST["localistion"] .
-				"','" . $_POST["c_remarques"] . "'", "confines");
-	}
-	?>
+	
 	<script type="text/javascript">
 	var alertcin = "";
 
@@ -184,7 +169,24 @@ error_reporting(0);
 				</section>
 
 				<!--corps de la page-->
-
+				<?php
+	include('config/functions.php');
+	$ready = false;
+	if (isset($_POST)) {
+		if (!existDB($_POST["c_cin"], "confines", "cin_c")) {
+			if (!existDB($_POST["c_id"], "confines", "id_c")) {
+				$ready = true;
+			}
+		}
+		if ($ready){
+			insert("'" . $_POST["c_id"] . "','" . $_POST["c_nom"] . "','" . $_POST["c_prenom"] .
+				"','" . $_POST["c_cin"] . "','" . $_POST["c_date_naissance"] . "','" . $_POST["c_date_test"] .
+				"','" . $_POST["c_symptomes"] . "','" . $_POST["c_etat"] . "','" . $_POST["localistion"] .
+				"','" . $_POST["c_remarques"] . "'", "confines");
+			echo '<div class="message green"> <p> confiné ajouté avec succés </p> </div>';
+		}
+	}
+	?>
 				<section class="container">
 					<br>
 					<div class="row">
