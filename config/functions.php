@@ -17,9 +17,9 @@ $conn->close();
 
 
 function connect(){
-    $servername = "localhost";
-$username = "root";
-$password = "";
+    $servername = "tp-cloud-mysql.cmuhyjhukgdw.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "newpassword";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);

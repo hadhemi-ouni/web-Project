@@ -177,9 +177,9 @@ error_reporting(0);
     <div class="tbl-content">
 				<?php
 					
-					$servername = "localhost";
-					$username = "root";
-					$password = "";
+					$servername = "tp-cloud-mysql.cmuhyjhukgdw.us-east-1.rds.amazonaws.com";
+					$username = "admin";
+					$password = "newpassword";
 					$conn = new mysqli($servername, $username, $password);
 					if ($conn->connect_error) {
 						die("Connection failed: " . $conn->connect_error);

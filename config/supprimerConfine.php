@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "");
+$mysqli = new mysqli("tp-cloud-mysql.cmuhyjhukgdw.us-east-1.rds.amazonaws.com", "admin", "newpassword");
 if($mysqli->connect_error) {
   exit('Could not connect');
 }
